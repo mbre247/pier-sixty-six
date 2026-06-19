@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Residences at Pier Sixty‑Six — Fort Lauderdale Waterfront</title>
+<meta name="description" content="A rarified collection of waterfront residences at Pier Sixty‑Six, Fort Lauderdale. By Tavistock Group. 2–5 bedroom homes, private plunge pools, 32‑acre resort & superyacht marina.">
+<style>
+  :root{ --navy:#0f2438; --navy2:#16314a; --gold:#c9a55c; --ink:#1b2733; --paper:#f6f3ee; --mut:#5d6b78; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Helvetica Neue',Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.serif{font-family:'Georgia','Times New Roman',serif;font-weight:400;letter-spacing:.01em}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  .eyebrow{text-transform:uppercase;letter-spacing:.32em;font-size:12px;color:var(--gold);font-family:'Helvetica Neue',Arial,sans-serif}
+  /* hero */
+  .hero{background:
+      radial-gradient(120% 80% at 50% -10%, #1c3a59 0%, var(--navy) 55%, #0a1a2a 100%);
+      color:#fff;text-align:center;padding:86px 24px 72px;position:relative;overflow:hidden}
+  .hero:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:90px;
+      background:radial-gradient(120% 100% at 50% 0,transparent 60%,var(--paper) 61%)}
+  .hero .eyebrow{color:var(--gold)}
+  .hero h1{font-size:clamp(34px,6vw,62px);color:#fff;margin:14px 0 6px;letter-spacing:.06em}
+  .hero .sub{font-size:clamp(14px,2.4vw,18px);letter-spacing:.34em;text-transform:uppercase;color:#cdd9e4}
+  .hero p.lede{max-width:680px;margin:26px auto 0;color:#dce6ef;font-size:18px;font-family:Georgia,serif;font-style:italic}
+  .stats{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin:34px auto 0;max-width:760px}
+  .stat{background:rgba(255,255,255,.06);border:1px solid rgba(201,165,92,.35);border-radius:10px;padding:14px 20px;min-width:150px}
+  .stat b{display:block;font-family:Georgia,serif;font-size:24px;color:var(--gold)}
+  .stat span{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#cdd9e4}
+  .cta-row{margin-top:34px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative;z-index:2}
+  .btn{display:inline-block;padding:15px 30px;border-radius:40px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;transition:.2s}
+  .btn-gold{background:var(--gold);color:#13243a;font-weight:700}
+  .btn-gold:hover{background:#d8b974}
+  .btn-ghost{border:1px solid rgba(255,255,255,.5);color:#fff}
+  .btn-ghost:hover{background:rgba(255,255,255,.1)}
+  /* sections */
+  section{padding:66px 0}
+  .section-head{text-align:center;max-width:720px;margin:0 auto 42px}
+  .section-head h2{font-size:clamp(26px,4vw,40px);margin:10px 0;color:var(--navy)}
+  .section-head p{color:var(--mut);font-size:17px}
+  .rule{width:54px;height:2px;background:var(--gold);margin:18px auto}
+  /* offerings */
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+  .card{background:#fff;border:1px solid #e7e0d4;border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(15,36,56,.06)}
+  .card .top{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:26px 26px 22px}
+  .card .top .tag{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+  .card .top h3{font-size:26px;margin-top:6px;color:#fff}
+  .card .top .meta{margin-top:8px;color:#bcccd9;font-size:14px}
+  .card .body{padding:24px 26px}
+  .card ul{list-style:none}
+  .card li{position:relative;padding:6px 0 6px 22px;color:#33424f;font-size:15px}
+  .card li:before{content:"";position:absolute;left:0;top:13px;width:7px;height:7px;border-radius:50%;background:var(--gold)}
+  /* amenities */
+  .amen{background:var(--navy);color:#fff}
+  .amen .section-head h2{color:#fff}
+  .amen .section-head p{color:#c4d2de}
+  .amen-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+  .amen-col h4{font-family:Georgia,serif;font-size:19px;color:var(--gold);margin-bottom:10px;border-bottom:1px solid rgba(201,165,92,.3);padding-bottom:8px}
+  .amen-col ul{list-style:none}
+  .amen-col li{padding:5px 0;color:#d7e1ea;font-size:14.5px}
+  /* specs */
+  .spec-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+  .spec{background:#fff;border:1px solid #e7e0d4;border-radius:12px;padding:24px}
+  .spec h4{font-family:Georgia,serif;color:var(--navy);font-size:18px;margin-bottom:8px}
+  .spec ul{list-style:none}.spec li{padding:4px 0;color:#33424f;font-size:14.5px;padding-left:16px;position:relative}
+  .spec li:before{content:"–";position:absolute;left:0;color:var(--gold)}
+  /* contact */
+  .contact{background:linear-gradient(135deg,#13283f,#0a1a2a);color:#fff;text-align:center}
+  .contact h2{color:#fff;font-size:clamp(26px,4vw,38px)}
+  .contact .agent{margin:8px 0 4px;font-size:20px;font-family:Georgia,serif;color:var(--gold)}
+  .contact .small{color:#b9c7d4;font-size:14px;letter-spacing:.04em}
+  footer{background:#08151f;color:#7f93a3;font-size:12px;padding:30px 24px;text-align:center;line-height:1.7}
+  footer a{color:#9fb3c2}
+</style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Fort Lauderdale · The Yachting Capital of the World</div>
+      <h1>The Residences at Pier Sixty‑Six</h1>
+      <div class="sub">Own the Waterfront</div>
+      <p class="lede">A rarified collection of private waterfront residences nestled within a reimagined 32‑acre resort &amp; superyacht marina — by Tavistock Group.</p>
+      <div class="stats">
+        <div class="stat"><b>62</b><span>Private Residences</span></div>
+        <div class="stat"><b>2–5</b><span>Bedrooms</span></div>
+        <div class="stat"><b>1,645–3,800+</b><span>Sq Ft</span></div>
+        <div class="stat"><b>32</b><span>Acre Resort</span></div>
+        <div class="stat"><b>164</b><span>Marina Slips</span></div>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="#contact">Request Pricing &amp; Availability</a>
+        <a class="btn btn-ghost" href="#offerings">Explore the Residences</a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap section-head">
+      <div class="eyebrow">The Opportunity</div>
+      <h2>Own at the Gateway to the Venice of America</h2>
+      <div class="rule"></div>
+      <p>A South Florida icon for more than 50 years, Pier Sixty‑Six is being completely reimagined as a luxury waterfront destination. The inaugural offering presents 62 homes across distinct waterfront addresses — with privileged access to the resort, marina promenade, restaurants, shops, and ample dockage for superyachts.</p>
+    </div>
+  </section>
+
+  <section id="offerings" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Two Distinct Living Opportunities</div>
+        <h2>Choose Your Waterfront</h2><div class="rule"></div>
+      </div>
+      <div class="cards">
+
+        <div class="card">
+          <div class="top"><div class="tag">Condominium · Azul</div>
+            <h3>Azul Residences</h3>
+            <div class="meta">11‑story waterfront tower · 4 corner residences per floor</div></div>
+          <div class="body"><ul>
+            <li><b>First building in Fort Lauderdale</b> to offer a private plunge pool in every residence</li>
+            <li>Expansive wraparound terraces with panoramic skyline, Intracoastal &amp; Atlantic Ocean views</li>
+            <li>Lofty 10‑foot ceilings with direct water views from every room</li>
+            <li>Private elevator access from a secured residential lobby</li>
+          </ul></div>
+        </div>
+
+        <div class="card">
+          <div class="top"><div class="tag">Condominium · Indigo</div>
+            <h3>Indigo Residences</h3>
+            <div class="meta">Prime marina‑front position · 3–5 bedroom corner homes</div></div>
+          <div class="body"><ul>
+            <li>Light‑filled corner residences with floor‑to‑ceiling windows &amp; direct water views</li>
+            <li>Private terraces with a temperature‑controlled plunge pool, illuminated in distinctive aqua</li>
+            <li>Private elevator access &amp; secured residential lobby</li>
+            <li>Open‑plan living at the finest position on the waterfront</li>
+          </ul></div>
+        </div>
+
+        <div class="card">
+          <div class="top"><div class="tag">Resort Residences</div>
+            <h3>The Resort Residences</h3>
+            <div class="meta">Two intimate 4‑story buildings · only 5 homes per floor</div></div>
+          <div class="body"><ul>
+            <li>Boutique collection of 31 designer‑ready homes, 1,645 to 3,800+ sq ft</li>
+            <li>Distinctive architecture — double‑height living rooms &amp; private garden retreats</li>
+            <li>Private residential lobby entryways &amp; semi‑private elevators</li>
+            <li>Individually designed two‑ to four‑bedroom floor plans</li>
+          </ul></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="amen">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">The Resort &amp; Marina</div>
+        <h2>A 32‑Acre World Unto Itself</h2><div class="rule"></div>
+        <p>A lushly landscaped resort framed by the legendary superyacht marina — 5,000 linear feet of dockage, 164 slips, welcoming vessels up to 400 feet.</p>
+      </div>
+      <div class="amen-grid">
+        <div class="amen-col"><h4>Pools &amp; Outdoors</h4><ul>
+          <li>VIP pool with private cabanas &amp; chaise service</li>
+          <li>Adult pool &amp; marina‑front dining pavilion</li>
+          <li>Resort pool with a three‑story slide &amp; kids club</li>
+          <li>Multi‑level pool deck &amp; tropical gardens</li>
+        </ul></div>
+        <div class="amen-col"><h4>Dining &amp; Lounges</h4><ul>
+          <li>Signature waterfront restaurant</li>
+          <li>Marina promenade restaurant &amp; retail</li>
+          <li>Lobby bar &amp; terrace lounge · poolside café</li>
+          <li><b>Pier Top</b> — the iconic rotating sunset lounge</li>
+        </ul></div>
+        <div class="amen-col"><h4>Wellness &amp; Spa</h4><ul>
+          <li>Lavish spa — priority access for owners</li>
+          <li>State‑of‑the‑art fitness center</li>
+          <li>Yoga &amp; Pilates studio</li>
+          <li>Wellness lounge &amp; water grotto</li>
+        </ul></div>
+        <div class="amen-col"><h4>Marina &amp; Service</h4><ul>
+          <li>Immediate marina &amp; promenade access</li>
+          <li>Superyacht dockage &amp; boating drop‑offs</li>
+          <li>À la carte concierge — dining, catering, housekeeping</li>
+          <li>Marine‑focused kids club &amp; VIP events</li>
+        </ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Inside the Residences</div>
+        <h2>Designer‑Ready, Down to the Detail</h2><div class="rule"></div>
+      </div>
+      <div class="spec-grid">
+        <div class="spec"><h4>Chef‑Inspired Kitchens</h4><ul>
+          <li>Custom Italian cabinetry &amp; quartz countertops</li>
+          <li>Sub‑Zero refrigerator, freezer &amp; wine storage</li>
+          <li>Wolf gas / induction cooktop &amp; oven</li>
+          <li>Asko dishwasher · undermount stainless sinks</li>
+        </ul></div>
+        <div class="spec"><h4>Spa‑Inspired Baths</h4><ul>
+          <li>Custom Italian wooden cabinetry</li>
+          <li>Polished chrome fixtures by Grohe</li>
+          <li>Custom rain showers with integrated LED lighting</li>
+          <li>Smart toilets by Kohler</li>
+        </ul></div>
+        <div class="spec"><h4>Living &amp; Terraces</h4><ul>
+          <li>Indoor / outdoor living, wraparound terraces</li>
+          <li>Signature private plunge pools</li>
+          <li>10‑ft ceilings &amp; direct water views</li>
+          <li>Secured lobby with direct elevator access</li>
+        </ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="eyebrow" style="color:var(--gold)">Private Inquiries</div>
+      <h2>Request Pricing &amp; Availability</h2>
+      <div class="rule"></div>
+      <p style="max-width:560px;margin:0 auto;color:#cdd9e4">Pricing and current availability are provided privately. Reach out for the full gallery, floor plans, and a personal tour of the residences and marina.</p>
+      <p class="agent">Michael Beaulieu</p>
+      <p class="small">Realtor® · Pompano Beach Realty · South Florida</p>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="mailto:michaelbeaulieure@gmail.com?subject=Pier%20Sixty-Six%20Residences%20%E2%80%94%20Pricing%20%26%20Availability&body=Hi%20Michael%2C%20I%27d%20like%20more%20information%20on%20The%20Residences%20at%20Pier%20Sixty-Six.">Email Michael</a>
+        <a class="btn btn-ghost" href="https://piersixtysixresidences.com" target="_blank" rel="noopener">Developer Site</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      The Residences at Pier Sixty‑Six are developed by Tavistock Group. Presented by Michael Beaulieu, Realtor®, Pompano Beach Realty — an independent licensed real estate professional, not the developer.<br>
+      Plans, specifications, improvements, amenities, dimensions and availability are subject to change without notice; completed improvements may differ from descriptions. This is not an offer to sell or solicitation where prohibited. Square footage is approximate.
+    </div>
+  </footer>
+
+</body>
+</html>
